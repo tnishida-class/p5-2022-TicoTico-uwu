@@ -1,16 +1,28 @@
 function setup() {
-  createCanvas(128,128);
+  createCanvas(300,300);
 }
 
 function draw() {
-  background(0);
-  strokeWeight(4);
-  fill(178, 100, 162);
+  let p = color (255,255,255)
+  let c = color (0,255,100)
+  let b = color (0,100,255)
+  
+  background (p)
+
+  fill(c);
+
   triangle(12,120,116,120,116,10);
-  fill(94, 185, 84);
+
+  fill(b);
+
   triangle(0,108,106,108,106,0);
-  fill(255);
-  textSize(32);
-  textFont("serif");
-  text("46", 68, 100);
+  
+  var myDiv = createDiv ('TicoTico')
+  var myDiv1 = createDiv ('Does Some Code')
+
+  myDiv.child(myDiv1)
+  myDiv.position (60,100)
+
+  myDiv.style ('Text Aligned', 'Bottom')
+  
 }
