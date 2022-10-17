@@ -3,27 +3,57 @@ function setup() {
   createCanvas(200, 200);
 
 //Color Coordinates  
-    let B= color (0,0,0)
+    let B= color (160,160,160)
+    let Bl = color (20,20,20)
+    let R = color(210,43,43)
     let W= color (255,255,255)
 
-//Color Fill
-    if((i+j)/2 == 0) {
-      fill (B) 
-
-      else {
-        fill (W)
-      }
-    }
-
-
-//Size Condition    
-
+noStroke()
 
 //Checkers Board
   for(let i = 0; i < 8; i++){
     for(let j = 0; j < 8; j++){
-      rect(10*j,10*i,10,10);
+
+       if ((i+j)%2==1)
+        {
+          fill (B)
+          }
+
+      else{
+          fill (W)
+        }
+        
+      rect(20*j,20*i,20,20);
+
 
       }
     }
+  
+//Red Circles
+  for(let k = 0; k < 8; k++){
+    for(let l = 0; l < 3; l++){
+    
+      fill (R)
+
+      if ((l+k)%2==1)
+{
+      circle(10+(20*k),10+(20*l),10);
+      
+}       
+      }
+    }
+
+    for(let k = 0; k < 8; k++){
+      for(let l = 5; l < 8; l++){
+      
+
+        fill (Bl)
+        if ((l+k)%2==1)
+  {
+        circle(10+(20*k),10+(20*l),10);
+        
+  }       
+        }
+      }
+
   }
