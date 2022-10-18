@@ -43,8 +43,10 @@ noStroke()
       }
     }
 
-    for(let k = 0; k < 8; k++){
-      for(let l = 5; l < 8; l++){
+//Black Circles
+
+  for(let k = 0; k < 8; k++){
+    for(let l = 5; l < 8; l++){
       
 
         fill (Bl)
