@@ -45,7 +45,7 @@ console.log(min)
   const n = 10;
   for(let i = 0; i < n; i++){ line(0, height * i / n, width, height * i / n); }
   
-  line (0,200+average,400,200+average)
+  line (0,average,400,average)
   noStroke();
 
   for(let i = 0; i < scores.length; i++){
